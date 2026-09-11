@@ -47,7 +47,6 @@ static int desempilhar(Pilha *p) {
     if (p->topo >= 0) return p->dados[(p->topo)--];
     return -1;
 }
-static int pilha_vazia(Pilha *p) { return p->topo == -1; }
 static void liberar_pilha(Pilha *p) { free(p->dados); free(p); }
 
 // --- Funções Principais ---
